@@ -1,0 +1,580 @@
+/* Colors */
+:root {
+    --primary-color: #004AAD;
+    --secondary-color: #0085FF;
+    --accent-color: #A8D5FF;
+    --background-color: #F0F5FA;
+    --text-color: #333;
+}
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f8fb;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #004aad;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header .logo h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header .nav-links li a:hover {
+    color: #a8d5ff;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #004aad, #0085ff);
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-content .btn {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background: #a8d5ff;
+    border-radius: 5px;
+    margin: 10px;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-content .btn:hover {
+    background: white;
+    color: #004aad;
+}
+
+.hero-image img {
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+/* Highlights Section */
+.highlights {
+    padding: 40px 20px;
+    background: #f4f8fb;
+    text-align: center;
+}
+
+.highlights h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.card i {
+    font-size: 36px;
+    color: #0085ff;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background: #004aad;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0 0;
+}
+
+footer .social-icons li a {
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+footer .social-icons li a:hover {
+    color: #a8d5ff;
+}
+/* About Section */
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-color: #f4f8fb;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-text h1 {
+    font-size: 32px;
+    color: #004aad;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    line-height: 1.8;
+    font-size: 16px;
+    color: #333;
+}
+
+.about-image img {
+    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Key Skills Section */
+.key-skills {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.key-skills h2 {
+    font-size: 28px;
+    color: #004aad;
+    margin-bottom: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skill {
+    background-color: #f4f8fb;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.skill h3 {
+    font-size: 18px;
+    color: #004aad;
+    margin-bottom: 10px;
+}
+
+/* Achievements Section */
+.achievements {
+    padding: 40px 20px;
+    background-color: #f4f8fb;
+}
+
+.achievements h2 {
+    font-size: 28px;
+    color: #004aad;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.achievement-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.achievement-list li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+/* Portfolio Section */
+.portfolio {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f8fb;
+}
+
+.portfolio h1 {
+    font-size: 32px;
+    color: #004aad;
+    margin-bottom: 10px;
+}
+
+.portfolio .section-description {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Filters */
+.filters {
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #004aad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.filter-btn:hover {
+    background-color: #007bff;
+}
+
+/* Project Gallery */
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.project-info h3 {
+    font-size: 18px;
+    color: #004aad;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+/* Skills Section */
+.skills {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f8fb;
+}
+
+.skills h1 {
+    font-size: 32px;
+    color: #004aad;
+    margin-bottom: 10px;
+}
+
+.skills .section-description {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Other Skills Section */
+.other-skills {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.other-skills h2 {
+    font-size: 28px;
+    color: #004aad;
+    margin-bottom: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skill-card {
+    background-color: #f4f8fb;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.skill-card i {
+    font-size: 36px;
+    color: #0085ff;
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    font-size: 18px;
+    color: #004aad;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+/* Contact Section */
+.contact {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f8fb;
+}
+
+.contact h1 {
+    font-size: 32px;
+    color: #004aad;
+    margin-bottom: 10px;
+}
+
+.contact .section-description {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Contact Form */
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #004aad;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #004aad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.contact-form .btn:hover {
+    background-color: #007bff;
+}
+
+/* Contact Info */
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.contact-info h2 {
+    font-size: 20px;
+    color: #004aad;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+/* Banner Section */
+.banner {
+    background: linear-gradient(135deg, #004aad, #007bff);
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.banner h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Banner Section */
+.banner {
+    background: linear-gradient(135deg, #004aad, #007bff);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.banner-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.banner h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner p {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+    color: #e0f3ff;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.nav-bar ul li {
+    display: inline;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #004aad;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-bar ul li a:hover {
+    color: #007bff;
+}
